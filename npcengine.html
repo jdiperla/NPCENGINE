@@ -1,0 +1,42 @@
+<script language='javascript' type='text/javascript'>
+ 
+function Beginnings() {
+document.getElementById("NPCResponseWindow").innerHTML = ""
+document.getElementById("NPCTalkWindow").innerHTML += "Hello. Can I help you today?<br>";
+document.getElementById("NPCResponseWindow").innerHTML += "<a href='#' onclick='nicetomeetyou();'>Hi NPC, my name is Player</a><br>"
+document.getElementById("NPCResponseWindow").innerHTML += "<a href='#' onclick='nicetomeetyou();'>Hi NPC, my name is Player</a><br>"
+
+return false;
+}
+
+function nicetomeetyou() {
+document.getElementById("NPCResponseWindow").innerHTML = ""
+document.getElementById("NPCTalkWindow").innerHTML += "Hi NPC, my name is Player<br>";
+document.getElementById("NPCResponseWindow").innerHTML += "<a href='#' onclick='Beginnings2();'>Same here</a><br>"
+
+return false;
+}
+
+function Beginnings2() {
+document.getElementById("NPCResponseWindow").innerHTML = ""
+document.getElementById("NPCResponseWindow").innerHTML += "<a href='#' onclick='END();'>Lets do this again, shall we?</a><br>"
+
+return false;
+}
+
+function END() {
+document.getElementById("NPCResponseWindow").innerHTML = ""
+
+return false;
+}
+
+</script><HTML>
+<BODY>
+<table>
+	<tr>
+		<td><div id="NPCTalkWindow"></div></td></tr>
+    <tr>
+        <td> <div id="NPCResponseWindow"> <a href='#' onclick='Beginnings();'>Begin Conversation</a></div>
+        </td>
+    </tr>
+</table>
