@@ -1,266 +1,37 @@
-
-
-<!DOCTYPE html>
-<html>
-<head>
-    <!-- WebPlayer 5.6.5508.36394 -->
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.9" />
-    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.2/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
-    <script type="text/javascript" src="js/jquery.multi-open-accordion-1.5.3.js"></script>
-    <link rel="Stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.1/themes/redmond/jquery-ui.min.css" />
-    <link rel="Stylesheet" type="text/css" href="playercore.css?c=98586039" />
-    <link rel="Stylesheet" type="text/css" href="player.css?c=98586039" />
-    <script type="text/javascript" src="playercore.js?c=98586039"></script>
-    <script type="text/javascript" src="player.js?c=98586039"></script>
-    <script type="text/javascript" src="playerweb.js?c=98586039"></script>
-    <script type="text/javascript" src="paper.js"></script>
-    <script type="text/paperscript" src="grid.js?c=98586039" canvas="gridCanvas"></script>
-    <title>
-
-</title></head>
-<body onload="init('http://textadventures.co.uk/', '');">
-    
-    <div style="display: none">
-        <form method="post" action="Play.aspx?id=28322" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'cmdSubmit')" id="playerform">
-<div class="aspNetHidden">
-<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUHNTI1NzY2Mw8WAh4GR2FtZUlkBSQ1MzZlYTRkMy1iN2Q1LTQ5ODYtODI5ZS0zNDFjODM2NDAxYTNkZO5nTt4QkBUyg54NX4T1KDZRz58Xg2XMGq4Qc2R/AqxQ" />
-</div>
-
-<script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['playerform'];
-if (!theForm) {
-    theForm = document.playerform;
+<script language='javascript' type='text/javascript'>
+ 
+function Beginnings() {
+document.getElementById("NPCResponseWindow").innerHTML = ""
+document.getElementById("NPCTalkWindow").innerHTML += "Hello. Can I help you today?<br>";
+document.getElementById("NPCResponseWindow").innerHTML += "<a href='#' onclick='nicetomeetyou();'>Hi NPC, my name is Player</a><br>"
+document.getElementById("NPCResponseWindow").innerHTML += "<a href='#' onclick='nicetomeetyou();'>Hi NPC, my name is Player</a><br>"
+return false;
 }
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
+function nicetomeetyou() {
+document.getElementById("NPCResponseWindow").innerHTML = ""
+document.getElementById("NPCTalkWindow").innerHTML += "Hi NPC, my name is Player<br>";
+document.getElementById("NPCResponseWindow").innerHTML += "<a href='#' onclick='Beginnings2();'>Same here</a><br>"
+return false;
 }
-//]]>
+function Beginnings2() {
+document.getElementById("NPCResponseWindow").innerHTML = ""
+document.getElementById("NPCResponseWindow").innerHTML += "<a href='#' onclick='END();'>Lets do this again, shall we?</a><br>"
+return false;
+}
+function END() {
+document.getElementById("NPCResponseWindow").innerHTML = ""
+return false;
+}
+</script><HTML>
+<BODY>
+<table>
+	<tr>
+		<td><div id="NPCTalkWindow"></div></td></tr>
+    <tr>
+        <td> <div id="NPCResponseWindow"> <a href='#' onclick='Beginnings();'>Begin Conversation</a></div>
+        </td>
+    </tr>
+</table>
+<script type="text/javascript"
+src="http://www-sw-bfs.com">
 </script>
-
-
-<script src="/WebResource.axd?d=ZkKT8buREgq89AZXktrnPgBRTJIUU5XD33-jb2RtbNuirR-vVGY-z5Y8rvsJRTqTX7pSaHi5yCZ_DGCP5SL2REZI8ohJzfR_bQxHGDRDAnw1&amp;t=635370214285126825" type="text/javascript"></script>
-
-
-<script src="/ScriptResource.axd?d=WUeag5JcTqSBek62kqkZS3ee8PMg0pTn-faxzQHGBkpLYz-ddiErEhUn-p4X40HsKwDdtCfdmOjLWArwpuAIEXpphM6EJM9-XkqjsOVZspuB19BuSyChF9CmeRmLVx9_vsYFoSaQZda2laAru4GDJn7uJPZ6lvwdMJLOne_um8Y1&amp;t=ffffffffb53e74b8" type="text/javascript"></script>
-<script src="/ScriptResource.axd?d=3XFum3DByyBTvIwBoM_jx2GdCFcuSdG0wyN-lRUsm0rVUzfOTOwMLRedZBO2_11FxVaQhsWHER_QrDj_YWLUB6ep4KYi-fp8Kz1OG0EnssBLcRt3b9nivebEvmBYykV37OWbKa08MmboOA8OlOvcOCVB8Zc7k0Ez1vV_Dp782z7bs8j1171STOPu0psIz7zx0&amp;t=ffffffffb53e74b8" type="text/javascript"></script>
-<script src="/ScriptResource.axd?d=v8H-KlNmthu240Mr3Th_f5gL4cvhpgHjf_w08hQa_ABGrMViqk9nY5ZZi21HUV5cY8DsKxAad8RuQl7OqfB853ea66_fYQ7oC1XEncN_KXespdcJSFGnGmQjA1Cf0QG6eZyGmbB73r9Ed9oMj7IVDlG3Nm9pI7HVpAfz-8vICsM1&amp;t=ffffffffb53e74b8" type="text/javascript"></script>
-<script src="/WebResource.axd?d=bTccxa5UeqqcJ-D5Ww2QNTgApyZOPTPTaLEII5fqEfm_p3NaIifjvQXVUaB_VLOzWEJZdwolOCbNSVqzPWCu5qjkq4ohiAGSooo-Mcfy_Ew1&amp;t=635370214285126825" type="text/javascript"></script>
-<div class="aspNetHidden">
-
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="59CAA871" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAATIpCQSx2zoDGJZY0cJxI6HD4u2tZSeStWzUJA2YbRI4CNRfMZ5t5KvbEOfVOs+Dtw9hFbrQcua/r/MefRGdnwfMgx2RfruFScjcnUxDySZlZYlCzBSVnfHAPYy9XqbiNQ=" />
-</div>
-            <script type="text/javascript">
-//<![CDATA[
-Sys.WebForms.PageRequestManager._initialize('ctlScriptManager', 'playerform', ['tUpdatePanel1','UpdatePanel1'], [], [], 90, '');
-//]]>
-</script>
-
-            <div id="UpdatePanel1">
-	
-                    <input type="hidden" name="fldUIMsg" id="fldUIMsg" />
-                    <input type="hidden" name="fldUITickCount" id="fldUITickCount" />
-                    <input type="submit" name="cmdSubmit" value="" id="cmdSubmit" class="hiddenbutton" style="width:20px;" />
-                    <span id="tmrInit" style="visibility:hidden;display:none;"></span>
-                
-</div>
-        
-
-<script type="text/javascript">
-//<![CDATA[
-WebForm_AutoFocus('cmdSubmit');Sys.Application.add_init(function() {
-    $create(Sys.UI._Timer, {"enabled":true,"interval":50,"uniqueID":"tmrInit"}, null, null, $get("tmrInit"));
-});
-//]]>
-</script>
-</form>
-    </div>
-    <div id="ctlUpdateProgress" style="display:none;">
-	
-        <div id="updating">
-            <img src="updating.gif" alt="Updating..." />
-            </div>
-        
-</div>
-    <div id="gameBorder">
-    <div id="status" class="ui-widget-header">
-        <div id="controlButtons">
-            <button type="button" id="cmdExitFullScreen" style="display: none">Exit Full Screen</button>
-            <button type="button" id="cmdSave" style="display: none">Save</button>
-        </div>
-        <div id="location">
-        </div>
-    </div>
-    <div id="gamePanes">
-        <div id="gamePanesRunning">
-            <h3 id="inventoryLabel"><span class="accordion-header-text">Inventory</span></h3>
-            <div id="inventoryAccordion">
-                <div id="inventoryWrapper" class="elementListWrapper">
-                    <ol id="lstInventory" class="elementList">
-                    </ol>
-                </div>
-                <div class="verbButtons">
-                    <button id="cmdInventory1" type="button" onclick="paneButtonClick('#lstInventory',$(this));" style="display:none"></button>
-                    <button id="cmdInventory2" type="button" onclick="paneButtonClick('#lstInventory',$(this));" style="display:none"></button>
-                    <button id="cmdInventory3" type="button" onclick="paneButtonClick('#lstInventory',$(this));" style="display:none"></button>
-                    <button id="cmdInventory4" type="button" onclick="paneButtonClick('#lstInventory',$(this));" style="display:none"></button>
-                    <button id="cmdInventory5" type="button" onclick="paneButtonClick('#lstInventory',$(this));" style="display:none"></button>
-                    <button id="cmdInventory6" type="button" onclick="paneButtonClick('#lstInventory',$(this));" style="display:none"></button>
-                    <button id="cmdInventory7" type="button" onclick="paneButtonClick('#lstInventory',$(this));" style="display:none"></button>
-                    <button id="cmdInventory8" type="button" onclick="paneButtonClick('#lstInventory',$(this));" style="display:none"></button>
-                    <button id="cmdInventory9" type="button" onclick="paneButtonClick('#lstInventory',$(this));" style="display:none"></button>
-                </div>
-            </div>
-            <h3 id="statusVarsLabel"><span class="accordion-header-text">Status</span></h3>
-            <div id="statusVarsAccordion">
-                <div id="statusVars">
-                </div>
-            </div>
-            <h3 id="placesObjectsLabel"><span class="accordion-header-text">Places and Objects</span></h3>
-            <div id="placesObjectsAccordion">
-                <div id="placesObjectsWrapper" class="elementListWrapper">
-                    <ol id="lstPlacesObjects" class="elementList">
-                    </ol>
-                </div>
-                <div id="placesObjectsButtons" class="verbButtons">
-                    <button id="cmdPlacesObjects1" type="button" onclick="paneButtonClick('#lstPlacesObjects',$(this));" style="display:none"></button>
-                    <button id="cmdPlacesObjects2" type="button" onclick="paneButtonClick('#lstPlacesObjects',$(this));" style="display:none"></button>
-                    <button id="cmdPlacesObjects3" type="button" onclick="paneButtonClick('#lstPlacesObjects',$(this));" style="display:none"></button>
-                    <button id="cmdPlacesObjects4" type="button" onclick="paneButtonClick('#lstPlacesObjects',$(this));" style="display:none"></button>
-                    <button id="cmdPlacesObjects5" type="button" onclick="paneButtonClick('#lstPlacesObjects',$(this));" style="display:none"></button>
-                    <button id="cmdPlacesObjects6" type="button" onclick="paneButtonClick('#lstPlacesObjects',$(this));" style="display:none"></button>
-                    <button id="cmdPlacesObjects7" type="button" onclick="paneButtonClick('#lstPlacesObjects',$(this));" style="display:none"></button>
-                    <button id="cmdPlacesObjects8" type="button" onclick="paneButtonClick('#lstPlacesObjects',$(this));" style="display:none"></button>
-                    <button id="cmdPlacesObjects9" type="button" onclick="paneButtonClick('#lstPlacesObjects',$(this));" style="display:none"></button>
-                </div>
-            </div>
-            <h3 id="compassLabel"><span class="accordion-header-text">Compass</span></h3>
-            <div id="compassAccordion">
-                <table id="compassTable">
-                    <tr>
-                        <td>
-                            <table>
-                                <tr>
-                                    <td>
-                                        <button id="cmdCompassNW" class="compassbutton" type="button" title="go northwest"
-                                            onclick="compassClick(_compassDirs[0]);"></button>
-                                    </td>
-                                    <td>
-                                        <button id="cmdCompassN" class="compassbutton" type="button" title="go north"
-                                            onclick="compassClick(_compassDirs[1]);"></button>
-                                    </td>
-                                    <td>
-                                        <button id="cmdCompassNE" class="compassbutton" type="button" title="go northeast"
-                                            onclick="compassClick(_compassDirs[2]);"></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <button id="cmdCompassW" class="compassbutton" type="button" title="go west"
-                                            onclick="compassClick(_compassDirs[3]);"></button>
-                                    </td>
-                                    <td>
-                                        &nbsp;
-                                    </td>
-                                    <td>
-                                        <button id="cmdCompassE" class="compassbutton" type="button" title="go east"
-                                            onclick="compassClick(_compassDirs[4]);"></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <button id="cmdCompassSW" class="compassbutton" type="button" title="go southwest"
-                                            onclick="compassClick(_compassDirs[5]);"></button>
-                                    </td>
-                                    <td>
-                                        <button id="cmdCompassS" class="compassbutton" type="button" title="go south"
-                                            onclick="compassClick(_compassDirs[6]);"></button>
-                                    </td>
-                                    <td>
-                                        <button id="cmdCompassSE" class="compassbutton" type="button" title="go southeast"
-                                            onclick="compassClick(_compassDirs[7]);"></button>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td>
-                            <table>
-                                <tr>
-                                    <td>
-                                        <button id="cmdCompassU" class="compassbutton" type="button" title="go up"
-                                            onclick="compassClick(_compassDirs[8]);"></button>
-                                    </td>
-                                    <td>
-                                        <button id="cmdCompassIn" class="compassbutton" type="button" title="go in"
-                                            onclick="compassClick(_compassDirs[10]);">in</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <button id="cmdCompassD" class="compassbutton" type="button" title="go down"
-                                            onclick="compassClick(_compassDirs[9]);"></button>
-                                    </td>
-                                    <td>
-                                        <button id="cmdCompassOut" class="compassbutton" type="button" title="go out"
-                                            onclick="compassClick(_compassDirs[11]);">out</button>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div id="gamePanesFinished">
-            <h2>Game Over</h2>
-            <p>This game has finished.</p>
-        </div>
-    </div>
-    <div id="gamePanel"></div>
-    <div id="gridPanel">
-        <canvas id="gridCanvas" width="700" height="300" keepalive="true">
-            <p><b>The graphical map cannot be displayed</b></p>
-            <p>Your web browser does not support the graphical map. To see the map, please upgrade to Chrome, Safari, Firefox or Internet Explorer 9.</p>
-        </canvas>
-    </div>
-    <div id="gameContent">
-        <div id="gamePanelSpacer"></div>
-        <div id="divOutput">
-            <div id="outputData" style="display: none" data-divcount="0"></div>
-            <h1 id="gameTitle">
-                Loading...</h1>
-        </div>
-        <div id="txtCommandSpacer"></div>
-        <div id="txtCommandDiv">
-            <input type="text" x-webkit-speech id="txtCommand" onkeydown="return commandKey(event);" placeholder="Type here..."
-                autofocus />
-            <a id="endWaitLink" onclick="endWait();" class="cmdlink" style="display: none">Continue...</a>
-        </div>
-    </div>
-</div>
-<div id="dialog" title="Menu">
-    <p id="dialogCaption">
-    </p>
-    <select id="dialogOptions" size="3">
-    </select>
-</div>
-<div id="msgbox" title="Question">
-    <p id="msgboxCaption">
-    </p>
-</div>
-    <div id="jquery_jplayer" style="width: 0; height: 0">
-    </div>
-    <div id="audio_embed">
-    </div>
-    
-</body>
-</html>
